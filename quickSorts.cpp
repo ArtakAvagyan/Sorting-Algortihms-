@@ -29,7 +29,7 @@ void quickSort (std::vector<int>::iterator start , std::vector<int>::iterator en
 }
 int main()
 {
-	std::vector<int>vec{1,7,8,4,9,14};
+	std::vector<int>vec {1,7,8,4,9,14};
 	quickSort(vec.begin(),vec.end()-1);
 	for (const auto& it : vec)
 	{
