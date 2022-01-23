@@ -7,7 +7,7 @@
 template <typename iter , typename T>
 iter BinarySearch(iter beg , iter end , const T& key)
 {
-	if(beg > end) {throw std::invalid_argument{"aaaqaa"} ;}
+	if(beg > end) {throw std::invalid_argument {"Invalis Argument !!!"} ;}
 	auto it = std::next( beg , (std::distance(beg,end)/2));
 	if (*it == key) { return it; }
 	else if (*it < key) { return BinarySearch( std::next(it),end, key ); }
